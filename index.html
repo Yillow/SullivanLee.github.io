@@ -4,82 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sullivan Lee - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #1E90FF;
+            text-decoration: none;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            border-bottom: 2px solid #1E90FF;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .subheading {
+            font-weight: bold;
+        }
+        .subheading span {
+            font-style: italic;
+        }
+        .project-list {
+            margin-left: 20px;
+        }
+        .skills {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Sullivan Lee</h1>
-        <p>Computer Programmer</p>
-        <img src="profile.jpg" alt="Profile Picture">
-    </header>
 
-    <section class="about-me">
-        <h2>About Me</h2>
-        <p>
-            Enthusiastic and dedicated computer science student at Rutgers University with a passion for problem-solving and coding. Eager to contribute my skills and knowledge to real-world projects. Excited to embark on a journey of continuous learning and growth in the field of computer science.
-        </p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>Sullivan Lee</h1>
+            <div class="contact-info">
+                <p>609-968-8747 | <a href="mailto:ssullivanish@gmail.com">ssullivanish@gmail.com</a> | US Citizen</p>
+            </div>
+        </header>
 
-    <section class="education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>Rutgers University</strong>
-                <p>Computer Science (BS) - 2026</p>
-                <strong>Relevant Classes</strong>
-                <p>Intro to Computer Science, Data Structures, Computer Architecture, Principles of Information and Data Management, Discrete Structures, Linear Programming</p>
-            </li>
-        </ul>
-    </section>
+        <!-- Education Section -->
+        <section>
+            <h2 class="section-title">Education</h2>
+            <ul>
+                <li>
+                    <span class="subheading">Rutgers University</span>, New Brunswick, NJ
+                    <span>Sep. 2022 – May 2026</span>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <ul>
+                        <li>Clubs and Organizations: Creation of Games Society, Rutgers Cantonese Club, Scarlet Smash</li>
+                        <li>Relevant Coursework: Data Structures, Algorithms, Databases, Discrete Mathematics, Linear Algebra, Data Management for Data Science, Computer Architecture</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-    <section class="job-history">
-        <h2>Job History</h2>
-        <ul>
-            <li>
-                <strong>Eye Doctor Assistant</strong>
-                <p>Doctor Sun Eye Care</p>
-                <p>July 2024 - September 2024</p>
-                <ul>
-                    <li>Operated imaging machines for eye scans, linking digital data to patient records.</li>
-                    <li>Troubleshot imaging system issues, improving system reliability and workflow efficiency.</li>
-                    <li>Helped organize and transfer patient files using specialized software, ensuring data accuracy.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Gymnastics Instructor Assistant</strong>
-                <p>Gymland Gymnastics</p>
-                <p>May 2022 - September 2022</p>
-                <ul>
-                    <li>Assisted lead instructors in teaching fundamental gymnastics skills to young children at a basic level.</li>
-                    <li>Provided patient and encouraging guidance to help children develop foundational gymnastics abilities.</li>
-                    <li>Engaged with children through interactive activities to foster a positive and enjoyable learning experience.</li>
-                    <li>Collaborated with the team to organize group activities that promoted teamwork and coordination.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+        <!-- Experience Section -->
+        <section>
+            <h2 class="section-title">Experience</h2>
+            <ul>
+                <li>
+                    <span class="subheading">Software Engineer Fellow</span>, RU Blueprint, New Brunswick, NJ
+                    <span>Jan. 2024 – May 2024</span>
+                    <ul>
+                        <li>Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems.</li>
+                        <li>Developed a full-stack web application using Flask, React, PostgreSQL, and Docker to analyze GitHub data.</li>
+                        <li>Explored ways to visualize GitHub collaboration in a classroom setting.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subheading">Operations Intern</span>, Dr Sun Eye Care, Plainsboro, NJ
+                    <span>Jul. 2024 – Sep. 2024</span>
+                    <ul>
+                        <li>Digitized and organized patient records using office management software to streamline administrative workflows.</li>
+                        <li>Maintained and troubleshot diagnostic equipment, including optical imaging and data storage devices.</li>
+                        <li>Provided technical support for office computers and ensured seamless integration with practice management systems.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Password Manager GUI</strong>
-                <p>Designed and implemented a Java-based graphical user interface (GUI) for a secure password manager. The application allows users to register new usernames and passwords, and subsequently login to access a password-protected website. The project demonstrates proficiency in GUI design, event handling, and data management.</p>
-            </li>
-            <li>
-                <strong>2048 Game Board</strong>
-                <p>Collaborated on developing a Java-based implementation of the 2048 game board, involving complex algorithms for updating open spaces, adding random tiles, and merging identical tiles. This project made me use my problem-solving skills, and gave me experience with data manipulation in a game context.</p>
-            </li>
-        </ul>
-    </section>
+        <!-- Projects Section -->
+        <section>
+            <h2 class="section-title">Projects</h2>
+            <ul class="project-list">
+                <li>
+                    <span class="subheading">Movie Database Analysis</span>, Nov 2024 – Dec 2024
+                    <p><em>PostgreSQL, SQL, Excel</em></p>
+                    <ul>
+                        <li>Implemented a relational database system to organize and analyze public movie industry datasets.</li>
+                        <li>Designed normalized database schema to efficiently store and relate movie, actor, and rating information.</li>
+                        <li>Successfully managed data quality issues including NULL handling, character encoding conversion, and data type validation.</li>
+                        <li>Created appropriate database schema with proper data types and relationships across multiple interconnected tables.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subheading">Sticker App</span>, Jan 2025 – Present
+                    <p><em>Android Studio, Java, Gradle</em></p>
+                    <ul>
+                        <li>Developed a custom Android sticker creation application using Android Studio, implementing image manipulation features including cropping, text overlay, and filter applications to deliver an intuitive user experience.</li>
+                        <li>Engineered the app's graphical user interface using Android's native UI components and XML layouts, ensuring responsive design and smooth user interactions across different screen sizes.</li>
+                        <li>Implemented complex image processing functionality using Android's built-in APIs, allowing users to dynamically modify and customize their sticker designs.</li>
+                        <li>Demonstrated problem-solving skills by overcoming technical challenges in image manipulation and user interface development, resulting in a fully functional mobile application.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: Sullivanish@gmail.com</p>
-        <p>Phone: (609) 968-8747</p>
-        <a class="github-button" href="https://github.com/Yillow" target="_blank">GitHub Profile</a>
-    </section>
+        <!-- Technical Skills Section -->
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <ul class="skills">
+                <li><strong>Languages</strong>: Java, Python, C/C++, SQL, HTML/CSS</li>
+                <li><strong>Developer Tools</strong>: Git, VS Code, PyCharm, IntelliJ, Eclipse, Jupyter</li>
+                <li><strong>Libraries</strong>: pandas, NumPy, Matplotlib</li>
+            </ul>
+        </section>
+    </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
