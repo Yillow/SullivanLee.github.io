@@ -4,158 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sullivan Lee - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            width: 70%;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            margin: 10px 0;
-            color: #333;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-        }
-        .contact-info {
-            text-align: center;
-            margin: 10px 0;
-        }
-        .contact-info a {
-            color: #1E90FF;
-            text-decoration: none;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        .section-title {
-            font-size: 1.5em;
-            border-bottom: 2px solid #1E90FF;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .subheading {
-            font-weight: bold;
-        }
-        .subheading span {
-            font-style: italic;
-        }
-        .project-list {
-            margin-left: 20px;
-        }
-        .skills {
-            margin-left: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Sullivan Lee</h1>
+        <p>Computer Programmer</p>
+        <img src="profile.jpg" alt="Profile Picture">
+    </header>
 
-    <div class="container">
-        <header>
-            <h1>Sullivan Lee</h1>
-            <div class="contact-info">
-                <p>609-968-8747 | <a href="mailto:ssullivanish@gmail.com">ssullivanish@gmail.com</a> | US Citizen</p>
-            </div>
-        </header>
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Enthusiastic and dedicated computer science student at Rutgers University with a passion for problem-solving and coding. Eager to contribute my skills and knowledge to real-world projects. Excited to embark on a journey of continuous learning and growth in the field of computer science.
+        </p>
+    </section>
 
-        <!-- About Me Section -->
-        <section>
-            <h2 class="section-title">About Me</h2>
-            <p>Enthusiastic and dedicated computer science student at Rutgers University with a passion for problem-solving and coding. Eager to contribute my skills and knowledge to real-world projects. Excited to embark on a journey of continuous learning and growth in the field of computer science.</p>
-        </section>
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Rutgers University</strong>
+                <p>Computer Science (BS) - 2026</p>
+                <strong>Relevant Classes:</strong>
+                <p>Intro to Computer Science, Data Structures, Computer Architecture, Principles of Information and Data Management, Discrete Structures, Linear Programming</p>
+            </li>
+        </ul>
+    </section>
 
-        <!-- Education Section -->
-        <section>
-            <h2 class="section-title">Education</h2>
-            <ul>
-                <li>
-                    <span class="subheading">Rutgers University</span>, New Brunswick, NJ
-                    <span>Sep. 2022 – May 2026</span>
-                    <p>Bachelor of Science in Computer Science</p>
-                    <ul>
-                        <li>Relevant Coursework: Intro to Computer Science, Data Structures, Computer Architecture, Principles of Information and Data Management, Discrete Structures, Linear Programming</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+    <section class="job-history">
+        <h2>Job History</h2>
+        <ul>
+            <li>
+                <strong>Gymland Gymnastics</strong>
+                <p>Gymnastics Instructor Assistant</p>
+                <p>May 2022 - September 2022</p>
+                <ul>
+                    <li>Assisted lead instructors in teaching fundamental gymnastics skills to young children at a basic level.</li>
+                    <li>Provided patient and encouraging guidance to help children develop foundational gymnastics abilities.</li>
+                    <li>Engaged with children through interactive activities to foster a positive and enjoyable learning experience.</li>
+                    <li>Collaborated with the team to organize group activities that promoted teamwork and coordination.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Doctor Sun Eye Care</strong>
+                <p>Eye Doctor Assistant</p>
+                <p>July 2024 - September 2024</p>
+                <ul>
+                    <li>Helped organize and transfer patient files using specialized software, ensuring data accuracy.</li>
+                    <li>Operated imaging machines for eye scans, linking digital data to patient records.</li>
+                    <li>Troubleshot imaging system issues, improving system reliability and workflow efficiency.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 
-        <!-- Experience Section -->
-        <section>
-            <h2 class="section-title">Experience</h2>
-            <ul>
-                <li>
-                    <span class="subheading">Gymnastics Instructor Assistant</span>, Gymland Gymnastics, Princeton, NJ
-                    <span>May 2022 – Sep. 2022</span>
-                    <ul>
-                        <li>Assisted lead instructors in teaching fundamental gymnastics skills to young children.</li>
-                        <li>Provided patient and encouraging guidance to help children develop basic gymnastics abilities.</li>
-                        <li>Collaborated with the team to organize group activities promoting teamwork and coordination.</li>
-                    </ul>
-                </li>
-                <li>
-                    <span class="subheading">Eye Doctor Assistant</span>, Doctor Sun Eye Care, Plainsboro, NJ
-                    <span>Jul. 2024 – Sep. 2024</span>
-                    <ul>
-                        <li>Helped organize and transfer patient files using specialized software, ensuring data accuracy.</li>
-                        <li>Operated imaging machines for eye scans, linking digital data to patient records.</li>
-                        <li>Troubleshot imaging system issues, improving system reliability and workflow efficiency.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Password Manager GUI</strong>
+                <p>Designed and implemented a Java-based graphical user interface (GUI) for a secure password manager. The application allows users to register new usernames and passwords, and subsequently login to access a password-protected website. The project demonstrates proficiency in GUI design, event handling, and data management.</p>
+            </li>
+            <li>
+                <strong>2048 Game Board</strong>
+                <p>Collaborated on developing a Java-based implementation of the 2048 game board, involving complex algorithms for updating open spaces, adding random tiles, and merging identical tiles. This project made me use my problem-solving skills, and gave me experience with data manipulation in a game context.</p>
+            </li>
+        </ul>
+    </section>
 
-        <!-- Projects Section -->
-        <section>
-            <h2 class="section-title">Projects</h2>
-            <ul class="project-list">
-                <li>
-                    <span class="subheading">Password Manager GUI</span>
-                    <p><em>Java</em></p>
-                    <ul>
-                        <li>Designed and implemented a graphical user interface (GUI) for a secure password manager application.</li>
-                        <li>Implemented functionality for registering new usernames and passwords and logging in to access password-protected websites.</li>
-                        <li>Demonstrated proficiency in GUI design, event handling, and data management.</li>
-                    </ul>
-                </li>
-                <li>
-                    <span class="subheading">2048 Game Board</span>
-                    <p><em>Java</em></p>
-                    <ul>
-                        <li>Collaborated on developing a Java-based implementation of the 2048 game board.</li>
-                        <li>Implemented complex algorithms for updating spaces, adding random tiles, and merging identical tiles.</li>
-                        <li>Gained experience with data manipulation in a game context and developed problem-solving skills.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: Sullivanish@gmail.com</p>
+        <p>Phone: (609) 968-8747</p>
+        <a class="github-button" href="https://github.com/Yillow" target="_blank">GitHub Profile</a>
+    </section>
 
-        <!-- Skills Section -->
-        <section>
-            <h2 class="section-title">Technical Skills</h2>
-            <ul class="skills">
-                <li><strong>Languages</strong>: Java, Python, C/C++, SQL, HTML/CSS</li>
-                <li><strong>Developer Tools</strong>: Git, VS Code, IntelliJ, Eclipse, Jupyter</li>
-                <li><strong>Libraries</strong>: pandas, NumPy, Matplotlib</li>
-            </ul>
-        </section>
-    </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
